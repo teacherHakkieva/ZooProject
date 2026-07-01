@@ -14,5 +14,15 @@ namespace ZooProject
         public int Age { get; set; }
         public string Habitat { get; set; }
         public bool Availability { get; set; }
+
+        public Animal(string id, string species, string name, int age, string habitat, bool availability)
+        {
+            AnimalID = id;
+            Species = species;
+            Name = name;
+            Age = age;
+            Habitat = habitat;
+            Availability = availability;
+        }
     }
 }
