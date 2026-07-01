@@ -28,6 +28,10 @@ namespace ZooProject
         {
             return $"{AnimalID};{Species};{Name};{Age};{Habitat};{Availability}";
         }
-
+        public override string ToString()
+        {
+            string status = Availability ? "Налично за разглеждане" : "Не е налично (в момента липсва)";
+            return $" ID: {AnimalID} | Вид: {Species} | Име: {Name} | Възраст: {Age} г. | Местообитание: {Habitat} | Статус: {status}";
+        }
     }
 }
